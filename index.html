@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>김민수 - 생성형 AI 데이터사이언티스트</title>
+    <title>AI Data Scientist - 생성형 AI 데이터사이언티스트</title>
+    <meta name="description" content="LLM 파인튜닝부터 RAG 시스템, AI 에이전트까지 생성형 AI의 전 영역을 다루는 데이터사이언티스트">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/Portfolio/_next/static/css/77b635a648a11745.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/Portfolio/_next/static/chunks/webpack-678887b2f921704d.js"/><script src="/Portfolio/_next/static/chunks/fd9d1056-ad15f396ddf9b7e5.js" async=""></script><script src="/Portfolio/_next/static/chunks/117-1fcf90214ef6edbb.js" async=""></script><script src="/Portfolio/_next/static/chunks/main-app-697e2b6a71575554.js" async=""></script><script src="/Portfolio/_next/static/chunks/498-0111d04695b3dedd.js" async=""></script><script src="/Portfolio/_next/static/chunks/app/page-70e021625b0656fd.js" async=""></script><title>v0 App</title><meta name="description" content="Created with v0"/><meta name="generator" content="v0.dev"/><style>
@@ -18,15 +19,16 @@ html {
     <nav class="nav">
         <div class="nav-container">
             <div class="nav-logo">
-                <div class="logo-gradient"></div>
-                <span>김민수</span>
+                <div class="logo-icon">AI</div>
+                <span>AI Data Scientist</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#about" class="nav-link">소개</a></li>
-                <li><a href="#skills" class="nav-link">기술</a></li>
-                <li><a href="#projects" class="nav-link">프로젝트</a></li>
-                <li><a href="#personal" class="nav-link">개인정보</a></li>
-                <li><a href="#contact" class="nav-link">연락처</a></li>
+                <li><a href="#section-0" class="nav-link active">소개</a></li>
+                <li><a href="#section-1" class="nav-link">프로필</a></li>
+                <li><a href="#section-2" class="nav-link">기술</a></li>
+                <li><a href="#section-3" class="nav-link">경험</a></li>
+                <li><a href="#section-4" class="nav-link">프로젝트</a></li>
+                <li><a href="#section-5" class="nav-link">연락처</a></li>
             </ul>
             <div class="mobile-menu-toggle">
                 <span></span>
@@ -37,226 +39,657 @@ html {
     </nav>
 
      Hero Section 
-    <section class="hero">
+    <section id="section-0" class="hero">
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    안녕하세요, <span class="gradient-text">김민수</span>입니다
+                    안녕하세요, <span class="gradient-text">AI Data Scientist</span>입니다
                 </h1>
-                <p class="hero-subtitle">생성형 AI 데이터사이언티스트</p>
-                <p class="hero-description">
-                    AI 모델 최적화와 LLM 기반 서비스 구현에 특화된 데이터사이언티스트입니다.
-                    MLOps 설계부터 클라우드 배포까지 전체 AI 파이프라인을 다룹니다.
+                <p class="hero-subtitle">
+                    <span class="highlight-blue">LLM 파인튜닝</span>부터 
+                    <span class="highlight-emerald">RAG 시스템</span>, 
+                    <span class="highlight-purple">AI 에이전트</span>까지<br/>
+                    생성형 AI의 전 영역을 다루는 데이터사이언티스트
                 </p>
+                <div class="hero-tags">
+                    <span class="tag tag-blue">LLM Fine-tuning</span>
+                    <span class="tag tag-emerald">RAG Systems</span>
+                    <span class="tag tag-purple">AI Agent</span>
+                    <span class="tag tag-orange">Prompt Engineering</span>
+                    <span class="tag tag-blue">Performance Analysis</span>
+                </div>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
-                    <a href="#contact" class="btn btn-secondary">연락하기</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-     About Section 
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">소개</h2>
-            <div class="about-content">
-                <p class="about-text">
-                    저는 생성형 AI와 데이터 사이언스 분야에서 혁신적인 솔루션을 개발하는 것에 열정을 가지고 있습니다. 
-                    복잡한 데이터 문제를 해결하고, AI 모델을 최적화하여 실제 비즈니스 가치를 창출하는 것이 저의 목표입니다.
-                </p>
-                <p class="about-text">
-                    특히 LLM 기반 서비스 구현과 MLOps 파이프라인 구축에 깊은 경험을 가지고 있으며, 
-                    클라우드 환경에서의 확장 가능한 AI 시스템 설계에 전문성을 보유하고 있습니다.
-                </p>
-            </div>
-        </div>
-    </section>
-
-     Skills Section 
-    <section id="skills" class="section bg-gray">
-        <div class="container">
-            <h2 class="section-title">기술 스택</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon blue">🤖</div>
-                    <h3>AI/ML 모델링</h3>
-                    <p>TensorFlow, PyTorch를 활용한 딥러닝 모델 개발 및 최적화. 생성형 AI 모델 파인튜닝과 프롬프트 엔지니어링에 특화되어 있습니다.</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon emerald">🔧</div>
-                    <h3>MLOps & 파이프라인</h3>
-                    <p>MLflow, Kubeflow를 이용한 모델 라이프사이클 관리. CI/CD 파이프라인 구축과 모델 버전 관리, 자동화된 배포 시스템 설계 경험이 있습니다.</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon purple">☁️</div>
-                    <h3>클라우드 & 인프라</h3>
-                    <p>AWS, GCP 환경에서의 확장 가능한 AI 인프라 구축. Docker, Kubernetes를 활용한 컨테이너화 및 마이크로서비스 아키텍처 설계가 가능합니다.</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon orange">📊</div>
-                    <h3>데이터 엔지니어링</h3>
-                    <p>대용량 데이터 처리를 위한 Spark, Hadoop 활용. 실시간 데이터 스트리밍과 ETL 파이프라인 구축, 데이터 웨어하우스 설계 경험을 보유하고 있습니다.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-     Projects Section 
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">주요 프로젝트</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>LLM 기반 고객 서비스 챗봇</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/example/chatbot" class="project-link" target="_blank">
-                                <span>GitHub</span>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15,3 21,3 21,9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg>
-                            </a>
-                            <a href="https://demo.example.com" class="project-link" target="_blank">
-                                <span>Demo</span>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15,3 21,3 21,9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        GPT-4 기반 고객 서비스 자동화 시스템 개발. 자연어 처리를 통한 고객 문의 분류 및 자동 응답 생성.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">OpenAI API</span>
-                        <span class="tech-tag">FastAPI</span>
-                        <span class="tech-tag">Docker</span>
-                    </div>
-                    <div class="project-results">
-                        <div class="result-item">
-                            <span class="result-label">성과:</span>
-                            <span class="result-value">고객 응답 시간 70% 단축</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>실시간 추천 시스템</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/example/recommendation" class="project-link" target="_blank">
-                                <span>GitHub</span>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15,3 21,3 21,9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        협업 필터링과 딥러닝을 결합한 하이브리드 추천 알고리즘 개발. 사용자 행동 패턴 분석을 통한 개인화 추천.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">TensorFlow</span>
-                        <span class="tech-tag">Apache Spark</span>
-                        <span class="tech-tag">Redis</span>
-                        <span class="tech-tag">Kubernetes</span>
-                    </div>
-                    <div class="project-results">
-                        <div class="result-item">
-                            <span class="result-label">성과:</span>
-                            <span class="result-value">클릭률 25% 향상</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>MLOps 파이프라인 구축</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/example/mlops" class="project-link" target="_blank">
-                                <span>GitHub</span>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15,3 21,3 21,9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        모델 학습부터 배포까지 전체 라이프사이클을 자동화하는 MLOps 파이프라인 설계 및 구현.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">MLflow</span>
-                        <span class="tech-tag">Kubeflow</span>
-                        <span class="tech-tag">GitHub Actions</span>
-                        <span class="tech-tag">AWS</span>
-                    </div>
-                    <div class="project-results">
-                        <div class="result-item">
-                            <span class="result-label">성과:</span>
-                            <span class="result-value">배포 시간 80% 단축</span>
-                        </div>
-                    </div>
+                    <a href="#section-4" class="btn btn-primary">포트폴리오 보기</a>
                 </div>
             </div>
         </div>
     </section>
 
      Personal Info Section 
-    <section id="personal" class="section bg-gray">
+    <section id="section-1" class="section bg-gray">
         <div class="container">
             <h2 class="section-title">개인정보</h2>
-            <div class="personal-content">
-                <div class="personal-info">
-                    <div class="profile-image">
-                        <img src="/placeholder.svg?height=200&width=200" alt="김민수 프로필 사진">
-                    </div>
-                    <div class="personal-details">
-                        <div class="detail-item">
-                            <span class="detail-label">이름:</span>
-                            <span class="detail-value">김민수</span>
+            <div class="personal-grid">
+                <div class="personal-card">
+                    <div class="profile-section">
+                        <div class="profile-image">
+                            <svg class="user-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
                         </div>
-                        <div class="detail-item">
-                            <span class="detail-label">생년월일:</span>
-                            <span class="detail-value">1995.03.15</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">연락처:</span>
-                            <span class="detail-value">010-1234-5678</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">이메일:</span>
-                            <span class="detail-value">minsu.kim@email.com</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">주소:</span>
-                            <span class="detail-value">서울특별시 강남구</span>
+                        <h3 class="profile-name">김AI개발</h3>
+                        <p class="profile-title">AI Data Scientist</p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M8 2v4"></path>
+                                    <path d="M16 2v4"></path>
+                                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                    <path d="M3 10h18"></path>
+                                </svg>
+                                <span>1996.08.22</span>
+                            </div>
+                            <div class="contact-item">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>서울특별시 서초구</span>
+                            </div>
+                            <div class="contact-item">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                <span>010-9876-5432</span>
+                            </div>
+                            <div class="contact-item">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                </svg>
+                                <span>your.email@example.com</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="education-section">
-                    <h3>학력</h3>
-                    <div class="education-item">
-                        <div class="education-period">2020.03 - 2022.02</div>
-                        <div class="education-details">
-                            <h4>서울대학교 대학원</h4>
-                            <p>컴퓨터공학과 석사 (데이터사이언스 전공)</p>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <div class="card-header">
+                            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path>
+                                <path d="M22 10v6"></path>
+                                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                            </svg>
+                            <h3>학력</h3>
+                        </div>
+                        <div class="education-list">
+                            <div class="education-item">
+                                <div class="education-period">2015.03 - 2019.02</div>
+                                <div class="education-details">
+                                    <h4>○○대학교 컴퓨터공학과</h4>
+                                    <p>데이터사이언스학과 학사</p>
+                                    <small>졸업 논문</small>
+                                </div>
+                            </div>
+                            <div class="education-item">
+                                <div class="education-period">2023.01 - 2023.08</div>
+                                <div class="education-details">
+                                    <h4>AI 교육과정 수료</h4>
+                                    <p>AI 엔지니어링 과정 수료</p>
+                                    <small>NLP 특화 트랙 | 팀 프로젝트 5회 수행</small>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="education-item">
-                        <div class="education-period">2016.03 - 2020.02</div>
-                        <div class="education-details">
-                            <h4>서울대학교</h4>
-                            <p>컴퓨터공학부 학사</p>
+                    <div class="info-card">
+                        <div class="card-header">
+                            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+                                <circle cx="12" cy="8" r="6"></circle>
+                            </svg>
+                            <h3>자격증 & 수상</h3>
+                        </div>
+                        <div class="certificates-grid">
+                            <div class="certificates-section">
+                                <h5>자격증</h5>
+                                <div class="certificate-item">
+                                    <span class="cert-name">ADsP</span>
+                                    <span class="cert-date">2023.03</span>
+                                </div>
+                                <div class="certificate-item">
+                                    <span class="cert-name">TensorFlow Developer</span>
+                                    <span class="cert-date">2023.06</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     About Section 
+    <section id="section-2" class="section">
+        <div class="container">
+            <h2 class="section-title">생성형 AI 전문가</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-content">
+                        <p class="about-text">
+                            <span class="highlight-blue">LLM 파인튜닝</span>부터 
+                            <span class="highlight-emerald">RAG 시스템</span>, 
+                            <span class="highlight-purple">AI 에이전트</span> 개발까지 생성형 AI의 전 영역에서 실무 경험을 보유하고 있습니다.
+                        </p>
+                        <p class="about-text">
+                            특히 <strong>PyTorch 기반 모델 구현</strong>과 
+                            <strong>성능 분석 및 최적화</strong>에 강점을 가지고 있으며, 고객사 프로젝트 경험을 통해 비즈니스 요구사항을 기술적으로 구현하는 능력을 갖추었습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="capabilities-card">
+                    <div class="card-header">
+                        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                        <h3>핵심 역량</h3>
+                    </div>
+                    <ul class="capabilities-list">
+                        <li>LLM SFT 데이터 구성 및 파인튜닝 실무 경험</li>
+                        <li>LoRA, QLoRA 등 경량화 기법 활용 전문성</li>
+                        <li>RAG 시스템 설계 및 성능 최적화</li>
+                        <li>AI 에이전트 개발 및 프롬프트 엔지니어링</li>
+                        <li>PyTorch 기반 딥러닝 모델 구현 및 분석</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Skills Section 
+    <section id="section-3" class="section bg-gray">
+        <div class="container">
+            <h2 class="section-title">기술 스택</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon skill-icon-blue">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path>
+                                    <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"></path>
+                                    <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"></path>
+                                    <path d="M17.599 6.5a3 3 0 0 0 .399-1.375"></path>
+                                    <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path>
+                                    <path d="M3.477 10.896a4 4 0 0 1 .585-.396"></path>
+                                    <path d="M19.938 10.5a4 4 0 0 1 .585.396"></path>
+                                    <path d="M6 18a4 4 0 0 1-1.967-.516"></path>
+                                    <path d="M19.967 17.484A4 4 0 0 1 18 18"></path>
+                                </svg>
+                            </div>
+                            <h3>LLM & Fine-tuning</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <h4>LLM Fine-tuning</h4>
+                                <p>KoBERT, KLUE/BERT-base 파인튜닝, SFT(Supervised Fine-Tuning) 데이터 구성 및 학습</p>
+                            </div>
+                            <div class="skill-item">
+                                <h4>Model Optimization</h4>
+                                <p>LoRA, QLoRA 경량화 기법 활용, 파라미터 효율적 파인튜닝 (PEFT) 구현</p>
+                            </div>
+                            <div class="skill-item">
+                                <h4>Performance Analysis</h4>
+                                <p>모델 성능 평가 지표 설계, A/B 테스트, 추론 결과 분석 및 개선 방안 도출</p>
+                            </div>
+                            <div class="skill-item">
+                                <h4>PyTorch & Transformers</h4>
+                                <p>PyTorch 기반 모델 구현, Hugging Face Transformers 라이브러리 활용</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon skill-icon-emerald">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                                </svg>
+                            </div>
+                            <h3>생성형 AI 서비스</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <h4>RAG Systems</h4>
+                                <p>Retrieval-Augmented Generation 시스템 설계, Vector DB 기반 문서 검색 최적화</p>
+                            </div>
+                            <div class="skill-item">
+                                <h4>AI Agent Development</h4>
+                                <p>LangChain/LangGraph 활용 AI 에이전트 구축, 대화 흐름 제어 및 상태 관리</p>
+                            </div>
+                            <div class="skill-item">
+                                <h4>Prompt Engineering</h4>
+                                <p>Few-shot, Chain-of-Thought 프롬프팅, 프롬프트 최적화 및 성능 개선</p>
+                            </div>
+                            <div class="skill-item">
+                                <h4>Service Integration</h4>
+                                <p>FastAPI 기반 AI 서비스 API 구축, 실시간 추론 시스템 개발</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon skill-icon-purple">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                                    <path d="M18 17V9"></path>
+                                    <path d="M13 17V5"></path>
+                                    <path d="M8 17v-3"></path>
+                                </svg>
+                            </div>
+                            <h3>데이터 분석 & 실험</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <h4>Experimental Design</h4>
+                                <p>사용자 데이터 기반 성능 실험 설계, 통계적 유의성 검증</p>
+                            </div>
+                            <div class="skill-item">
+                                <h4>Data Processing</h4>
+                                <p>대규모 텍스트 데이터 전처리, 학습 데이터셋 구성 및 품질 관리</p>
+                            </div>
+                            <div class="skill-item">
+                                <h4>Performance Metrics</h4>
+                                <p>BLEU, ROUGE, BERTScore 등 생성 모델 평가 지표 활용</p>
+                            </div>
+                            <div class="skill-item">
+                                <h4>Insight Generation</h4>
+                                <p>데이터 분석 결과 시각화, 비즈니스 인사이트 도출 및 리포팅</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 Tech Stack Tabs 
+                <div class="tech-stack-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-button active" data-tab="llm">LLM/Fine-tuning</button>
+                        <button class="tab-button" data-tab="genai">생성형 AI</button>
+                        <button class="tab-button" data-tab="analysis">데이터 분석</button>
+                        <button class="tab-button" data-tab="tools">개발 도구</button>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-panel active" id="tab-llm">
+                            <div class="tech-grid">
+                                <span class="tech-item">PyTorch</span>
+                                <span class="tech-item">Transformers</span>
+                                <span class="tech-item">KoBERT</span>
+                                <span class="tech-item">GPT-4</span>
+                                <span class="tech-item">LoRA</span>
+                                <span class="tech-item">QLoRA</span>
+                                <span class="tech-item">SFT</span>
+                                <span class="tech-item">PEFT</span>
+                                <span class="tech-item">Fine-tuning</span>
+                                <span class="tech-item">Model Optimization</span>
+                                <span class="tech-item">Performance Analysis</span>
+                                <span class="tech-item">Hyperparameter Tuning</span>
+                            </div>
+                        </div>
+                        <div class="tab-panel" id="tab-genai">
+                            <div class="tech-grid">
+                                <span class="tech-item">LangChain</span>
+                                <span class="tech-item">LangGraph</span>
+                                <span class="tech-item">RAG</span>
+                                <span class="tech-item">Vector DB</span>
+                                <span class="tech-item">FAISS</span>
+                                <span class="tech-item">Chroma</span>
+                                <span class="tech-item">OpenAI API</span>
+                                <span class="tech-item">Prompt Engineering</span>
+                                <span class="tech-item">AI Agents</span>
+                                <span class="tech-item">Retrieval Systems</span>
+                                <span class="tech-item">Document Processing</span>
+                                <span class="tech-item">Embedding Models</span>
+                            </div>
+                        </div>
+                        <div class="tab-panel" id="tab-analysis">
+                            <div class="tech-grid">
+                                <span class="tech-item">Python</span>
+                                <span class="tech-item">Pandas</span>
+                                <span class="tech-item">NumPy</span>
+                                <span class="tech-item">Matplotlib</span>
+                                <span class="tech-item">Seaborn</span>
+                                <span class="tech-item">Jupyter</span>
+                                <span class="tech-item">A/B Testing</span>
+                                <span class="tech-item">Statistical Analysis</span>
+                                <span class="tech-item">Data Visualization</span>
+                                <span class="tech-item">Experiment Design</span>
+                                <span class="tech-item">Performance Metrics</span>
+                                <span class="tech-item">Business Intelligence</span>
+                            </div>
+                        </div>
+                        <div class="tab-panel" id="tab-tools">
+                            <div class="tech-grid">
+                                <span class="tech-item">Git</span>
+                                <span class="tech-item">Docker</span>
+                                <span class="tech-item">FastAPI</span>
+                                <span class="tech-item">Streamlit</span>
+                                <span class="tech-item">Redis</span>
+                                <span class="tech-item">PostgreSQL</span>
+                                <span class="tech-item">AWS</span>
+                                <span class="tech-item">Google Cloud</span>
+                                <span class="tech-item">MLflow</span>
+                                <span class="tech-item">Weights & Biases</span>
+                                <span class="tech-item">Kubernetes</span>
+                                <span class="tech-item">CI/CD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Experience Section 
+    <section id="section-4" class="section">
+        <div class="container">
+            <h2 class="section-title">주요 경험</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-icon experience-icon-blue">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path>
+                                <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"></path>
+                                <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"></path>
+                                <path d="M17.599 6.5a3 3 0 0 0 .399-1.375"></path>
+                                <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path>
+                                <path d="M3.477 10.896a4 4 0 0 1 .585-.396"></path>
+                                <path d="M19.938 10.5a4 4 0 0 1 .585.396"></path>
+                                <path d="M6 18a4 4 0 0 1-1.967-.516"></path>
+                                <path d="M19.967 17.484A4 4 0 0 1 18 18"></path>
+                            </svg>
+                        </div>
+                        <div class="experience-title">
+                            <h3>LLM 파인튜닝 전문가</h3>
+                            <p>SFT & LoRA 기반 모델 최적화</p>
+                        </div>
+                    </div>
+                    <ul class="experience-list">
+                        <li>KoBERT 모델 SFT 데이터셋 구성 및 파인튜닝 수행</li>
+                        <li>LoRA 기법으로 파라미터 효율적 학습, 메모리 사용량 70% 절약</li>
+                        <li>파인튜닝 전후 성능 분석, 정확도 25% 향상 달성</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-icon experience-icon-emerald">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                            </svg>
+                        </div>
+                        <div class="experience-title">
+                            <h3>RAG 시스템 아키텍트</h3>
+                            <p>검색 증강 생성 시스템 설계</p>
+                        </div>
+                    </div>
+                    <ul class="experience-list">
+                        <li>Hybrid Search + Re-Ranking 기반 RAG 파이프라인 구축</li>
+                        <li>Vector DB 최적화로 검색 속도 3배 개선</li>
+                        <li>프롬프트 엔지니어링으로 응답 품질 40% 향상</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-icon experience-icon-purple">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
+                                <rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect>
+                                <line x1="6" x2="6.01" y1="6" y2="6"></line>
+                                <line x1="6" x2="6.01" y1="18" y2="18"></line>
+                            </svg>
+                        </div>
+                        <div class="experience-title">
+                            <h3>AI 서비스 개발자</h3>
+                            <p>생성형 AI 기반 서비스 구현</p>
+                        </div>
+                    </div>
+                    <ul class="experience-list">
+                        <li>LangGraph 활용 멀티턴 대화 AI 에이전트 개발</li>
+                        <li>FastAPI 기반 실시간 추론 API 서버 구축</li>
+                        <li>사용자 피드백 기반 모델 성능 지속 개선</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-icon experience-icon-orange">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                                <path d="M18 17V9"></path>
+                                <path d="M13 17V5"></path>
+                                <path d="M8 17v-3"></path>
+                            </svg>
+                        </div>
+                        <div class="experience-title">
+                            <h3>데이터 분석 & 실험 설계자</h3>
+                            <p>성능 실험 및 인사이트 도출</p>
+                        </div>
+                    </div>
+                    <ul class="experience-list">
+                        <li>A/B 테스트 설계로 모델 성능 객관적 평가</li>
+                        <li>사용자 행동 데이터 분석 및 개선점 도출</li>
+                        <li>실험 결과 시각화 및 비즈니스 리포팅</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Projects Section 
+    <section id="section-5" class="section bg-gray">
+        <div class="container">
+            <h2 class="section-title">주요 프로젝트</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon project-icon-blue">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
+                                <rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect>
+                                <line x1="6" x2="6.01" y1="6" y2="6"></line>
+                                <line x1="6" x2="6.01" y1="18" y2="18"></line>
+                            </svg>
+                        </div>
+                        <div class="project-period">6주 (개인 프로젝트)</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">KoBERT SFT 파인튜닝</h3>
+                        <p class="project-subtitle">감정 분석 모델 성능 최적화</p>
+                        <p class="project-description">
+                            한국어 감정 분석을 위한 KoBERT 모델 Supervised Fine-Tuning 및 LoRA 경량화 적용
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">KoBERT</span>
+                            <span class="tech-tag">SFT</span>
+                            <span class="tech-tag">LoRA</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Transformers</span>
+                        </div>
+                        <div class="project-challenges">
+                            <h4>주요 도전과 해결</h4>
+                            <ul>
+                                <li>SFT 데이터셋 구성: 10만개 한국어 감정 라벨링 데이터 전처리 및 품질 검증</li>
+                                <li>LoRA 파인튜닝: 파라미터 효율적 학습으로 GPU 메모리 사용량 70% 절약</li>
+                                <li>성능 분석: Precision, Recall, F1-Score 기반 모델 성능 평가 및 개선</li>
+                                <li>하이퍼파라미터 튜닝: Learning Rate, Batch Size 최적화로 수렴 안정성 확보</li>
+                            </ul>
+                        </div>
+                        <div class="project-core-tech">
+                            <h5>핵심 기술</h5>
+                            <p>SFT 데이터 구성 및 LoRA 기반 효율적 파인튜닝</p>
+                        </div>
+                        <div class="project-achievement">
+                            <div class="achievement-header">
+                                <div class="achievement-icon">✓</div>
+                                <h5>🏆 주요 성과</h5>
+                            </div>
+                            <p class="achievement-text">베이스라인 대비 F1-Score 25% 향상 (0.72 → 0.90)</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/example/kobert-sft" class="project-link" target="_blank">
+                                <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                </svg>
+                                GitHub
+                            </a>
+                            <a href="https://demo.example.com/kobert" class="project-link" target="_blank">
+                                <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M15 3h6v6"></path>
+                                    <path d="M10 14 21 3"></path>
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                </svg>
+                                Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon project-icon-emerald">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
+                                <rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect>
+                                <line x1="6" x2="6.01" y1="6" y2="6"></line>
+                                <line x1="6" x2="6.01" y1="18" y2="18"></line>
+                            </svg>
+                        </div>
+                        <div class="project-period">8주 (팀 프로젝트, AI 시스템 리드)</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">RAG 기반 QA 시스템</h3>
+                        <p class="project-subtitle">문서 검색 증강 생성 서비스</p>
+                        <p class="project-description">
+                            기업 내부 문서 기반 질의응답 시스템, 검색 증강 생성으로 정확도 높은 답변 제공
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">RAG</span>
+                            <span class="tech-tag">LangChain</span>
+                            <span class="tech-tag">Vector DB</span>
+                            <span class="tech-tag">GPT-4</span>
+                            <span class="tech-tag">FAISS</span>
+                        </div>
+                        <div class="project-challenges">
+                            <h4>주요 도전과 해결</h4>
+                            <ul>
+                                <li>RAG 파이프라인: 문서 청킹, 임베딩, 검색, 생성 단계별 최적화</li>
+                                <li>Hybrid Search: BM25 + Dense Retrieval 조합으로 검색 성능 향상</li>
+                                <li>프롬프트 엔지니어링: Few-shot 예시 활용으로 답변 품질 개선</li>
+                                <li>성능 실험: 다양한 청킹 전략과 검색 알고리즘 A/B 테스트</li>
+                            </ul>
+                        </div>
+                        <div class="project-core-tech">
+                            <h5>핵심 기술</h5>
+                            <p>RAG 시스템 설계 및 검색-생성 파이프라인 최적화</p>
+                        </div>
+                        <div class="project-achievement">
+                            <div class="achievement-header">
+                                <div class="achievement-icon">✓</div>
+                                <h5>🏆 주요 성과</h5>
+                            </div>
+                            <p class="achievement-text">답변 정확도 85%, 사용자 만족도 4.2/5.0 달성</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/example/rag-qa" class="project-link" target="_blank">
+                                <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                </svg>
+                                GitHub
+                            </a>
+                            <a href="https://demo.example.com/rag-qa" class="project-link" target="_blank">
+                                <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M15 3h6v6"></path>
+                                    <path d="M10 14 21 3"></path>
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                </svg>
+                                Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon project-icon-purple">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
+                                <rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect>
+                                <line x1="6" x2="6.01" y1="6" y2="6"></line>
+                                <line x1="6" x2="6.01" y1="18" y2="18"></line>
+                            </svg>
+                        </div>
+                        <div class="project-period">5주 (개인 프로젝트)</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI Agent 대화 시스템</h3>
+                        <p class="project-subtitle">멀티턴 대화 AI 에이전트</p>
+                        <p class="project-description">
+                            상태 기반 멀티턴 대화가 가능한 AI 에이전트, 컨텍스트 유지 및 개인화 응답 제공
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">LangGraph</span>
+                            <span class="tech-tag">GPT-4</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">Streamlit</span>
+                        </div>
+                        <div class="project-challenges">
+                            <h4>주요 도전과 해결</h4>
+                            <ul>
+                                <li>상태 관리: LangGraph로 대화 컨텍스트 및 사용자 세션 상태 관리</li>
+                                <li>개인화: 사용자 프로필 기반 맞춤형 응답 생성 로직 구현</li>
+                                <li>실시간 처리: FastAPI + WebSocket으로 실시간 대화 인터페이스 구축</li>
+                                <li>성능 모니터링: 응답 시간, 만족도 지표 실시간 추적 시스템</li>
+                            </ul>
+                        </div>
+                        <div class="project-core-tech">
+                            <h5>핵심 기술</h5>
+                            <p>LangGraph 기반 상태 관리 및 멀티턴 대화 시스템</p>
+                        </div>
+                        <div class="project-achievement">
+                            <div class="achievement-header">
+                                <div class="achievement-icon">✓</div>
+                                <h5>🏆 주요 성과</h5>
+                            </div>
+                            <p class="achievement-text">평균 응답 시간 2초 이내, 대화 지속률 78% 달성</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/example/ai-agent" class="project-link" target="_blank">
+                                <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                </svg>
+                                GitHub
+                            </a>
+                            <a href="https://demo.example.com/ai-agent" class="project-link" target="_blank">
+                                <svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M15 3h6v6"></path>
+                                    <path d="M10 14 21 3"></path>
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                </svg>
+                                Demo
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -265,44 +698,63 @@ html {
     </section>
 
      Contact Section 
-    <section id="contact" class="section">
+    <section id="section-6" class="section">
         <div class="container">
-            <h2 class="section-title">연락처</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">📧</div>
-                        <div>
-                            <h3>이메일</h3>
-                            <p>minsu.kim@email.com</p>
+            <h2 class="section-title">연락하기</h2>
+            <div class="contact-container">
+                <div class="contact-intro">
+                    <h3>함께 생성형 AI의 미래를 만들어가요</h3>
+                    <p>LLM 파인튜닝과 RAG 시스템 전문가와 함께 혁신적인 AI 서비스를 구축하고 싶으시다면 언제든 연락주세요.</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon contact-icon-blue">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
                         </div>
+                        <h4>Email</h4>
+                        <p>ai.datascientist@example.com</p>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📱</div>
-                        <div>
-                            <h3>전화번호</h3>
-                            <p>010-1234-5678</p>
+                    <div class="contact-card">
+                        <div class="contact-icon contact-icon-emerald">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                            </svg>
                         </div>
+                        <h4>GitHub</h4>
+                        <p>github.com/ai-datascientist</p>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">💼</div>
-                        <div>
-                            <h3>LinkedIn</h3>
-                            <p>linkedin.com/in/minsu-kim</p>
+                    <div class="contact-card">
+                        <div class="contact-icon contact-icon-purple">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
                         </div>
+                        <h4>LinkedIn</h4>
+                        <p>linkedin.com/in/ai-datascientist</p>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">🐙</div>
-                        <div>
-                            <h3>GitHub</h3>
-                            <p>github.com/minsu-kim</p>
-                        </div>
-                    </div>
+                </div>
+                <div class="contact-button">
+                    <a href="mailto:ai.datascientist@example.com" class="btn btn-primary">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>
+                        연락하기
+                    </a>
+                </div>
+                <div class="footer-text">
+                    <p>© 2024 AI Data Scientist Portfolio. Built with HTML, CSS & JavaScript</p>
                 </div>
             </div>
         </div>
     </section>
 
     <script src="script.js"></script>
-    </div><script src="/Portfolio/_next/static/chunks/webpack-678887b2f921704d.js" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])</script><script>self.__next_f.push([1,"1:HL[\"/Portfolio/_next/static/css/77b635a648a11745.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"2:I[2846,[],\"\"]\n4:I[9107,[],\"ClientPageRoot\"]\n5:I[2257,[\"498\",\"static/chunks/498-0111d04695b3dedd.js\",\"931\",\"static/chunks/app/page-70e021625b0656fd.js\"],\"default\",1]\n6:I[4707,[],\"\"]\n7:I[6423,[],\"\"]\n9:I[1060,[],\"\"]\na:[]\n"])</script><script>self.__next_f.push([1,"0:[\"$\",\"$L2\",null,{\"buildId\":\"sOvZzDxS4rWfn2DcIYA-t\",\"assetPrefix\":\"/Portfolio\",\"urlParts\":[\"\",\"\"],\"initialTree\":[\"\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true],\"initialSeedData\":[\"\",{\"children\":[\"__PAGE__\",{},[[\"$L3\",[\"$\",\"$L4\",null,{\"props\":{\"params\":{},\"searchParams\":{}},\"Component\":\"$5\"}],null],null],null]},[[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/Portfolio/_next/static/css/77b635a648a11745.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[[\"$\",\"head\",null,{\"children\":[\"$\",\"style\",null,{\"children\":\"\\nhtml {\\n  font-family: '__GeistSans_9f14f2', '__GeistSans_Fallback_9f14f2';\\n  --font-sans: __variable_9f14f2;\\n  --font-mono: __variable_16c33f;\\n}\\n        \"}]}],[\"$\",\"body\",null,{\"children\":[\"$\",\"$L6\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L7\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[]}]}]]}]],null],null],\"couldBeIntercepted\":false,\"initialHead\":[null,\"$L8\"],\"globalErrorComponent\":\"$9\",\"missingSlots\":\"$Wa\"}]\n"])</script><script>self.__next_f.push([1,"8:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"1\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"2\",{\"children\":\"v0 App\"}],[\"$\",\"meta\",\"3\",{\"name\":\"description\",\"content\":\"Created with v0\"}],[\"$\",\"meta\",\"4\",{\"name\":\"generator\",\"content\":\"v0.dev\"}]]\n3:null\n"])</script></body>
+</body>
 </html>

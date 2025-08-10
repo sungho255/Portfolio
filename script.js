@@ -24,37 +24,6 @@ if (mobileMenuToggle && navMenu) {
   })
 }
 
-// Add active class to mobile menu when open
-const style = document.createElement("style")
-style.textContent = `
-    @media (max-width: 768px) {
-        .nav-menu.active {
-            display: flex;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background: white;
-            flex-direction: column;
-            padding: 1rem 2rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        
-        .mobile-menu-toggle.active span:nth-child(1) {
-            transform: rotate(-45deg) translate(-5px, 6px);
-        }
-        
-        .mobile-menu-toggle.active span:nth-child(2) {
-            opacity: 0;
-        }
-        
-        .mobile-menu-toggle.active span:nth-child(3) {
-            transform: rotate(45deg) translate(-5px, -6px);
-        }
-    }
-`
-document.head.appendChild(style)
-
 // Close mobile menu when clicking on a link
 document.querySelectorAll(".nav-link").forEach((link) => {
   link.addEventListener("click", () => {
@@ -63,7 +32,7 @@ document.querySelectorAll(".nav-link").forEach((link) => {
   })
 })
 
-// Add scroll effect to navigation
+// Navigation scroll effect
 window.addEventListener("scroll", () => {
   const nav = document.querySelector(".nav")
   if (window.scrollY > 50) {
@@ -75,7 +44,50 @@ window.addEventListener("scroll", () => {
   }
 })
 
-// Add intersection observer for animations
+// Active navigation link highlighting
+function updateActiveNavLink() {
+  const sections = document.querySelectorAll("section[id]")
+  const navLinks = document.querySelectorAll(".nav-link")
+
+  let current = ""
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop - 100
+    const sectionHeight = section.offsetHeight
+    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+      current = section.getAttribute("id")
+    }
+  })
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active")
+    if (link.getAttribute("href") === `#${current}`) {
+      link.classList.add("active")
+    }
+  })
+}
+
+window.addEventListener("scroll", updateActiveNavLink)
+window.addEventListener("load", updateActiveNavLink)
+
+// Tab functionality for tech stack
+const tabButtons = document.querySelectorAll(".tab-button")
+const tabPanels = document.querySelectorAll(".tab-panel")
+
+tabButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const targetTab = button.getAttribute("data-tab")
+
+    // Remove active class from all buttons and panels
+    tabButtons.forEach((btn) => btn.classList.remove("active"))
+    tabPanels.forEach((panel) => panel.classList.remove("active"))
+
+    // Add active class to clicked button and corresponding panel
+    button.classList.add("active")
+    document.getElementById(`tab-${targetTab}`).classList.add("active")
+  })
+})
+
+// Intersection Observer for animations
 const observerOptions = {
   threshold: 0.1,
   rootMargin: "0px 0px -50px 0px",
@@ -84,21 +96,32 @@ const observerOptions = {
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.style.opacity = "1"
-      entry.target.style.transform = "translateY(0)"
+      entry.target.classList.add("visible")
     }
   })
 }, observerOptions)
 
 // Observe elements for animation
-document.querySelectorAll(".skill-card, .project-card, .contact-item, .education-item").forEach((el) => {
-  el.style.opacity = "0"
-  el.style.transform = "translateY(20px)"
-  el.style.transition = "opacity 0.6s ease, transform 0.6s ease"
-  observer.observe(el)
+document.addEventListener("DOMContentLoaded", () => {
+  const animatedElements = document.querySelectorAll(`
+    .personal-card,
+    .info-card,
+    .about-card,
+    .capabilities-card,
+    .skill-card,
+    .experience-card,
+    .project-card,
+    .contact-card,
+    .tech-stack-tabs
+  `)
+
+  animatedElements.forEach((el) => {
+    el.classList.add("fade-in")
+    observer.observe(el)
+  })
 })
 
-// Add typing effect to hero title (optional enhancement)
+// Typing effect for hero title (optional)
 function typeWriter(element, text, speed = 100) {
   let i = 0
   element.innerHTML = ""
@@ -114,12 +137,94 @@ function typeWriter(element, text, speed = 100) {
   type()
 }
 
-// Initialize typing effect on page load
-window.addEventListener("load", () => {
-  const heroTitle = document.querySelector(".hero-title")
-  if (heroTitle) {
-    const originalText = heroTitle.innerHTML
-    // Uncomment the line below to enable typing effect
-    // typeWriter(heroTitle, originalText, 50);
+// Scroll to top functionality
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  })
+}
+
+// Add scroll to top button (optional)
+const scrollToTopBtn = document.createElement("button")
+scrollToTopBtn.innerHTML = "↑"
+scrollToTopBtn.className = "scroll-to-top"
+scrollToTopBtn.style.cssText = `
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+`
+
+scrollToTopBtn.addEventListener("click", scrollToTop)
+document.body.appendChild(scrollToTopBtn)
+
+// Show/hide scroll to top button
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    scrollToTopBtn.style.opacity = "1"
+    scrollToTopBtn.style.visibility = "visible"
+  } else {
+    scrollToTopBtn.style.opacity = "0"
+    scrollToTopBtn.style.visibility = "hidden"
   }
 })
+
+// Hover effects for project links
+document.querySelectorAll(".project-link").forEach((link) => {
+  link.addEventListener("mouseenter", function () {
+    this.style.transform = "translateY(-2px)"
+  })
+
+  link.addEventListener("mouseleave", function () {
+    this.style.transform = "translateY(0)"
+  })
+})
+
+// Smooth reveal animations for sections
+const revealElements = document.querySelectorAll(".section-title, .hero-title, .hero-subtitle")
+revealElements.forEach((el) => {
+  el.classList.add("fade-in")
+  observer.observe(el)
+})
+
+// Initialize page
+document.addEventListener("DOMContentLoaded", () => {
+  // Set initial active nav link
+  updateActiveNavLink()
+
+  // Add loading class to body
+  document.body.classList.add("loaded")
+})
+
+// Performance optimization: Debounce scroll events
+function debounce(func, wait) {
+  let timeout
+  return function executedFunction(...args) {
+    const later = () => {
+      clearTimeout(timeout)
+      func(...args)
+    }
+    clearTimeout(timeout)
+    timeout = setTimeout(later, wait)
+  }
+}
+
+// Apply debounce to scroll handlers
+const debouncedScrollHandler = debounce(() => {
+  updateActiveNavLink()
+}, 10)
+
+window.addEventListener("scroll", debouncedScrollHandler)
