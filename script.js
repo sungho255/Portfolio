@@ -121,31 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 })
 
-// Typing effect for hero title (optional)
-function typeWriter(element, text, speed = 100) {
-  let i = 0
-  element.innerHTML = ""
-
-  function type() {
-    if (i < text.length) {
-      element.innerHTML += text.charAt(i)
-      i++
-      setTimeout(type, speed)
-    }
-  }
-
-  type()
-}
-
-// Scroll to top functionality
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  })
-}
-
-// Add scroll to top button (optional)
+// Add scroll to top button
 const scrollToTopBtn = document.createElement("button")
 scrollToTopBtn.innerHTML = "↑"
 scrollToTopBtn.className = "scroll-to-top"
@@ -168,7 +144,13 @@ scrollToTopBtn.style.cssText = `
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
 `
 
-scrollToTopBtn.addEventListener("click", scrollToTop)
+scrollToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  })
+})
+
 document.body.appendChild(scrollToTopBtn)
 
 // Show/hide scroll to top button
@@ -182,49 +164,7 @@ window.addEventListener("scroll", () => {
   }
 })
 
-// Hover effects for project links
-document.querySelectorAll(".project-link").forEach((link) => {
-  link.addEventListener("mouseenter", function () {
-    this.style.transform = "translateY(-2px)"
-  })
-
-  link.addEventListener("mouseleave", function () {
-    this.style.transform = "translateY(0)"
-  })
-})
-
-// Smooth reveal animations for sections
-const revealElements = document.querySelectorAll(".section-title, .hero-title, .hero-subtitle")
-revealElements.forEach((el) => {
-  el.classList.add("fade-in")
-  observer.observe(el)
-})
-
 // Initialize page
 document.addEventListener("DOMContentLoaded", () => {
-  // Set initial active nav link
   updateActiveNavLink()
-
-  // Add loading class to body
-  document.body.classList.add("loaded")
 })
-
-// Performance optimization: Debounce scroll events
-function debounce(func, wait) {
-  let timeout
-  return function executedFunction(...args) {
-    const later = () => {
-      clearTimeout(timeout)
-      func(...args)
-    }
-    clearTimeout(timeout)
-    timeout = setTimeout(later, wait)
-  }
-}
-
-// Apply debounce to scroll handlers
-const debouncedScrollHandler = debounce(() => {
-  updateActiveNavLink()
-}, 10)
-
-window.addEventListener("scroll", debouncedScrollHandler)
